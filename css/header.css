@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+header
+{
+	height: 130px;
+}
+
+.institute-name h1
+{
+	font-size: 35px;
+	color:#2D2C2C
+}
+.logo
+{
+	
+}
+.checkbox
+{
+	width:130px;
+}
+span.institute-name
+{
+	width:300px;
+}
+.institute-name h1
+{
+	width:350px;
+}
+
+#loginForm
+{
+	padding-top: 10px;
+	text-align: right;
+}
+.loggedInText
+{
+	text-align:right;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	top:auto;
+	bottom:auto;
+}
+
+#login
+{
+	width: 90%;
+}
+
+#remember
+{
+	font-size:8px;
+	
+}
+
+.form-group
+{
+	padding: 5px;
+}
+
+.validation-msg
+{
+	color: red;
+	font-style:italic;
+	margin-right: 10px;
+}
+
+
+.myBtn
+{
+	margin: 10px;
+	background-color: #FFFFFF;
+	border: thick solid #010239;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+#loggedin
+{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: right;
+}
+
+#blank
+{
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: right;
+}

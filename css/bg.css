@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg
+{
+	height:609px;
+	width:1365px;
+	background:url(../assets/bg/bg1.jpg);
+}
+.bg-band
+{
+	height:609px;
+	width:1365px;
+	margin:auto;
+	background:url(../assets/bgBand/band.png) no-repeat 0 0;
+}
+
+@keyframes fadebg
+{
+	0%{
+		background-image:url(../assets/bg/bg1.jpg)
+	}
+	30%{
+		background-image:url(../assets/bg/bg1.jpg)
+	}
+	100%
+	{
+		background-image:url(../assets/bg/bg2.jpg)
+	}
+}
+
+.bg.change
+{
+	animation: fadebg 1s;
+	background-image:url(../assets/bg/bg2.jpg);
+}
+
