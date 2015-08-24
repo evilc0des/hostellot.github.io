@@ -4,6 +4,19 @@ $(document).ready(function(e) {
 	
 	$("#hostelSelect").hide();
 	
+	var sizeX=$('.navbar').width();
+	
+	console.log(sizeX);
+	var sizeY=(609/1365)*sizeX;
+	$('.bg').css({'width':sizeX, 'height':sizeY});
+	
+	$(window).resize(function(e) {
+		sizeX=$('.navbar').width();
+		sizeY=(609/1365)*sizeX;
+        $('.bg').css({'width':sizeX, 'height':sizeY});
+		console.log(sizeX);
+    });
+	
     $('.myBtn').click(function(e) {
 		
         var x = 0;  
@@ -19,7 +32,7 @@ $(document).ready(function(e) {
             // scroll up background position every 90 milliseconds  
             var bgAnim = window.setInterval(function() {  
                 banner.css("backgroundPosition", x + 'px' + ' ' + y + 'px');  
-                y=y-609;
+                y=y-sizeY;
 				
 				if(++n === 33)
 				{
@@ -30,7 +43,7 @@ $(document).ready(function(e) {
                 //if you need to scroll image horizontally -  
                 // uncomment x and comment y  
   
-            }, 65);
+            }, 45);
 			
 			$('.bg').addClass('change');
 			$(".jumbotron").fadeOut(400);

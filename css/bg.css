@@ -4,15 +4,18 @@
 .bg
 {
 	height:609px;
-	width:1365px;
+	width:100%;
 	background:url(../assets/bg/bg1.jpg);
+	background-size:100%;
+	
 }
 .bg-band
 {
-	height:609px;
-	width:1365px;
+	height:100%;
+	width:100%;
 	margin:auto;
 	background:url(../assets/bgBand/band.png) no-repeat 0 0;
+	background-size:100%;
 }
 
 @keyframes fadebg
