@@ -8,6 +8,7 @@ $(document).ready(function(e) {
 	
 	
 	var page=1;
+	console.log(page);
 	var bgAnim;
 	var sizeX=$('.navbar').width();
 	var sizeY=(609/1365)*sizeX;
@@ -28,28 +29,50 @@ $(document).ready(function(e) {
 		$('.footer').css({'z-index':'200'});
 	}
 	
-	
+	if(sizeX < 990)
+	{
+		$('#hostelSelect>h3').css({'font-size':'20px'});
+	}
+	if(sizeX < 880)
+	{
+		$('#hostelSelect>h3').css({'font-size':'16px'});
+	}
 	
 	
 	
 	$(window).resize(function(e) {
 		sizeX=$('.navbar').width();
 		
+		var bandMobPg2 = 'url(../hostellot/assets/bgBand/bandMob.png) no-repeat 0 '+ (-sizeY) + 'px';
+		
+		
+		
 		if(sizeX > 760)
 		{
 			
 			sizeY=(609/1365)*sizeX;
+			var bandPg2 = 'url(../hostellot/assets/bgBand/band.png) no-repeat 0 '+ (-sizeY*32) + 'px';
+			console.log(bandPg2);
        		$('.bg').css({'width':sizeX, 'height':sizeY});
 			console.log(sizeX);
+			if(page===1){
 			$('.bg').css({'background':'url(../hostellot/assets/bg/bg1.jpg)', 'background-size':'100% auto'});
 			$('.bg-band').css({'background':'url(../hostellot/assets/bgBand/band.png)', 'background-size':'100% auto'});
+		}
+		else if(page===2)
+		{	
+		$('.bg').css({'background':'url(../hostellot/assets/bg/bg2.jpg)', 'background-size':'100% auto'});
+		$('.bg-band').css({'background':bandPg2, 'background-size':'100% auto'});
+		}
 			$('.jumbotron').css({'text-align':'left'});
 			$('.jumbotron>h1').css({'font-size':''});
 			$('.footer').css({'z-index':''});
+		
 		}
 		else{
 			
 			sizeY=(960/640)*sizeX;
+			var bandMobPg2 = 'url(../hostellot/assets/bgBand/bandMob.png) no-repeat 0 '+ (-sizeY) + 'px';
 			$('.bg').css({'width':sizeX, 'height':sizeY});
 			$('.footer').css({'z-index':'200'});
 			if(page===1){
@@ -60,8 +83,9 @@ $(document).ready(function(e) {
 			}
 			else if(page===2)
 			{
+				
 				$('.bg').css({'background':'url(../hostellot/assets/bg/bgMob2.jpg)', 'background-size':'100% auto'});
-				$('.bg-band').css({'background':'url(../hostellot/assets/bgBand/bandMob.png) no-repeat 0'+ sizeY, 'background-size':'100% auto'});
+				$('.bg-band').css({'background':bandMobPg2, 'background-size':'100% auto'});
 				$('.jumbotron').css({'text-align':'center'});
 				$('.jumbotron>h1').css({'font-size':'50px'});
 			}
@@ -75,7 +99,18 @@ $(document).ready(function(e) {
 		$('.institute-name').removeClass('col-xs-offset-1');
 		
 	}
+	
+	if(sizeX < 990)
+	{
+		$('#hostelSelect>h3').css({'font-size':'20px'});
+	}
+	if(sizeX < 880)
+	{
+		$('#hostelSelect>h3').css({'font-size':'16px'});
+	}
+    
     });
+	
 	
     $('.myBtn').click(function(e) {
 		
@@ -87,6 +122,7 @@ $(document).ready(function(e) {
             var banner = $(".bg-band");  
 			
 			page++;
+			console.log(page);
   
             // set initial banner background position  
             banner.css('backgroundPosition', x + 'px' + ' ' + y + 'px');  
