@@ -21,12 +21,13 @@ header
 }
 span.institute-name
 {
-	width:300px;
+	width: auto;
 }
-.institute-name h1
+.institute-logo
 {
-	width:350px;
+	text-align:center;
 }
+
 
 #loginForm
 {

@@ -4274,8 +4274,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4323,7 +4322,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 	padding: 15px 15px;
 	font-size: 18px;
 	line-height: 20px;
-	width: 500px;
+	width: auto;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {

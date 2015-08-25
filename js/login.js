@@ -92,16 +92,19 @@ $(document).ready(function(e) {
 		case 'INVALID':
 				$('.login-form').show();
 				$('.validation-msg').show();
+				$('.validation-msg').html('Invalid Username/Password');
 				$('.loggedInText').hide();
 			break;
 		case 'FAILED':
 				$('.login-form').show();
 				$('.validation-msg').show();
+				$('.validation-msg').html('Login Failed');
 				$('.loggedInText').hide();
 			break;
 		case 'BLANK':
 				$('.login-form').show();
 				$('.validation-msg').show();
+				$('.validation-msg').html('USername or Password cannot be blank');
 				$('.loggedInText').hide();
 			break;
 		default:

@@ -11,6 +11,7 @@
 <link href="css/bootstrap_ms.css" rel="stylesheet">
 <link href="css/header.css" rel="stylesheet">
 <link href="css/bg.css" rel="stylesheet">
+<link href="css/misc.css" rel="stylesheet">
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -28,20 +29,22 @@
 <body>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-  <div class="navbar-header col-sm-6  ">
+  <div class="navbar-header col-sm-6 col-xs-12  ">
+  <div class="row">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      </div>
+      <a class="navbar-brand col-xs-12 col-md-12" href="#">
 					
-        <span class="institute-name col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-1">
-        <div class="col-md-5 col-sm-12 col-md-offset-0 col-sm-offset-3 col-xs-6 col-xs-offset-4">
+        <span class="institute-name col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+        <div class="institute-logo col-md-3 col-sm-12 col-md-offset-0 col-sm-offset-0 col-xs-4 col-xs-offset-4">
         <img class="logo" src="assets/nitLogo.png" alt="NITA logo" style="width:110px;height:120px">
         </div>
-        <div class="col-md-7 col-xs-12">
+        <div class="col-md-9 col-xs-12">
 		<h1>National Institute of <br>
       		Technology Agartala</h1>
             </div>
@@ -51,7 +54,7 @@
 
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<div class="login-space col-sm-6">
+<div class="login-space col-sm-6 col-md-6">
 <div class="loggedInText">
 Logged in as <b><span id="fname">Firstname</span> <span id="lname">Lastname</span></b>
 <br>
@@ -69,8 +72,8 @@ Logged in as <b><span id="fname">Firstname</span> <span id="lname">Lastname</spa
     <input type="password" class="mdl-textfield__input" id="pwd" name="password">
   </div>
   <br>
-  <div class="validation-msg form-group">Some message</div>
-  <div class="form-group">
+  <div class="validation-msg form-group col-xs-5">Some message</div>
+  <div class="col-xs-4 col-xs-offset-6 form-group">
   <div class="checkbox">
     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="remember">
      <span class="mdl-checkbox__label"><input type="checkbox" id="remember" class="mdl-checkbox__input" name="remember" value="true">
@@ -78,7 +81,7 @@ Logged in as <b><span id="fname">Firstname</span> <span id="lname">Lastname</spa
     </label>
   </div>
   </div>
-  <div class="form-group">
+  <div class="form-group col-xs-2">
   <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>
@@ -96,7 +99,7 @@ Logged in as <b><span id="fname">Firstname</span> <span id="lname">Lastname</spa
 <div class="jumbotron">
   <h1><strong>Hostellot</strong></h1>
   <p><i>A hostel selection module for <br> National Institute of Technology Agartala</i></p> 
-    <button type="button" class="myBtn" onClick="btnClick()">Select your hostel  <span class="glyphicon glyphicon-chevron-right"></span></button>
+    <button type="button" class="myBtn">Select your hostel  <span class="glyphicon glyphicon-chevron-right"></span></button>
   </div>
   <div id="hostelSelect" class="col-md-4 col-md-offset-8">
   <h3><b><i>Set up your options to get going:</i></b></h3>
@@ -124,7 +127,28 @@ Logged in as <b><span id="fname">Firstname</span> <span id="lname">Lastname</spa
   </div>
 </div>
 </div>
+<div class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class ="col-sm-6">
+<div class="pull-left footname footname-left">
+<b>Hostellot</b></div></div>
+<div class ="col-sm-6 ">
+<div class="pull-right footname footname-right">
+<b>Hostellot</b></div></div>
 </div>
+<div class="row">
+<div class="col-sm-6">
+<div class="pull-left credits credits-left"><p><i>Website designed by CodeClub&#64;NIT Agartala</i></p></div>
+</div>
+<div class="col-sm-6">
+<div class="pull-right credits credits-right"><p><i>Website designed by CodeClub&#64;NIT Agartala</i></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 
 
